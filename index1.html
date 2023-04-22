@@ -173,27 +173,144 @@
 
     </div>
 
+
+    <h2 class="datosinst">Nuevos Instrumento</h2>
+    
+      
+      
+        <div>
+      <br>
+      <label id="marca" for="">Marca</label>
+      <select id="marca" name="marca" onchange="ShowSelected();">
+        
+        <option value="13"></option>
+        <option value="12">Rosemount</option>
+        <option value="13">Yokogawa</option>
+        <option value="13">ABB</option>
+        <option value="13">FoxBoro</option>
+        </select>
+
+      <label id="modelo" for="">Modelo</label> 
+      <input type="text">
+
+
+      <label id="kks" for="">KKS</label> 
+      <input type="text">
+
+
+      <label id="ndeserie" for="">N° de Serie</label> 
+      <input type="text">
+
+      
+      <label id="unidad" for="">Unidad</label>
+      <select id="unidad" name="unidad" onchange="ShowSelected();">
+        <option value="13"></option>
+        
+        </select>
+
+          
+      <label id="subsistema" for="">Sistema</label> 
+      <select id="sistema" name="sistema" onchange="ShowSelected();">
+      <option value="13"></option>
+        <option value="12">TG#1</option>
+        <option value="13">TG#2</option>
+        <option value="13">TG#3</option>
+        <option value="13">TG#4</option> 
+    </select>
+
+
+      <label id="rangomin" for="">Rango min</label>
+      <input type="text">
+
+      <label id="rangomax" for="">Rango Max</label> 
+      <input type="text"> 
+
+
+      
+      <label id="unidaddemed" for="">Unidad de Med.</label> 
+      <select id="unidaddemed" name="unidaddemed" onchange="ShowSelected();">
+      <option value="13"></option>
+      <option value="12">PSIG</option>
+      <option value="13">PSIA</option>
+      <option value="13">PSID</option>
+      <option value="13">mBar</option>
+      <option value="13">Bar</option>
+      <option value="13">ºC</option>
+      <option value="13">ºF</option>
+      <option value="13">%lel</option>
+      <option value="13"></option>
+      <option value="13">mBar</option>  
+      </select>
+
+      <label id="tipo" for="">Tipo</label> 
+      <input type="text"> 
+
+
+      
+      <label id="central" for="">Central</label> 
+      <select id="central" name="central" onchange="ShowSelected();">
+      <option value="13"></option>
+        <option value="12">CT ROJO</option>
+        <option value="13">CT BARKER</option>
+        <option value="13">CR VILLA MARIA</option>
+      </select>
+
+
+      <label id="fecha" for="">Fecha</label> 
+      <input type="text"> 
+
+
+      
+      <label id="plandemant" for="">Plan de Mantenimiento</label> 
+      <select id="plandemant" name="plandemant" onchange="ShowSelected();">
+      <option value="13"></option>
+      <option value="12">PM01</option>
+      <option value="13">PM02</option>
+      <option value="13">PM03</option>
+      </select>
+      
+      <button id="nuevoregistro">Agregar Inst.</button>
+
+      <hr>
+
+  
+    </div>
+
+
+
+
+
     <h3>Datos de Calibracion</h3>
     <div>
       <label for="">4mA</label>
       <input type="text">
+      <br>
       <label for="">8mA</label>
       <input type="text">
+      <br>
       <label for="">12mA</label> 
       <input type="text">
+      <br>
       <label for="">16mA</label> 
       <input type="text">
+      <br>
       <label for="">20mA</label> 
       <input type="text">
+      <br>
       <label for="">16mA</label>
       <input type="text"> 
+      <br>
+
       <label for="">12mA</label> 
       <input type="text"> 
+      <br>
       <label for="">8mA</label>
       <input type="text">
+      <br>
       <label for="">4mA</label> 
       <input type="text"> 
-  
+      <br>
+      <button>Cargar Datos</button>
     </div>
     
 

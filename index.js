@@ -21,7 +21,7 @@ button.addEventListener('click', (e) =>{
   console.log(data)
 })*/
 
-const PT6210 = new instrumento("Rosemount","3051G,","10mav20pt001","356233","TG#3","lubricaciondetg","40058945","0","300");
+/*const PT6210 = new instrumento("Rosemount","3051G,","10mav20pt001","356233","TG#3","lubricaciondetg","40058945","0","300");
 const PT6510 = new instrumento("Rosemount","3051G,","10mav20pt001","35553","TG#3","lubricaciondetg","40058945","0","300");
 const PT4531 = new instrumento("Rosemount","3051G,","10mav20pt001","5552521","TG#3","lubricaciondetg","40058945","0","300");
 const PT8896 = new instrumento("Rosemount","3051G,","10mav20pt001","25157","TG#3","lubricaciondetg","40058945","0","300");
@@ -37,13 +37,28 @@ const PT1418 = new instrumento("Rosemount","3051G,","10mav20pt001","45464564","T
 const PT9210 = new instrumento("Rosemount","3051G,","10mav20pt001","212370","TG#3","lubricaciondetg","40058945","0","300");
 const PT1543 = new instrumento("Rosemount","3051G,","10mav20pt001","35353898","TG#3","lubricaciondetg","40058945","0","300");
 const PT1987 = new instrumento("Rosemount","3051G,","10mav20pt001","43563","TG#3","lubricaciondetg","40058945","0","300");
+*/
+
+const marca =document.getElementById("marca")
+const modelo =document.getElementById("modelo")
+const kks =document.getElementById("kks")
+const ndeserie =document.getElementById("ndeserie")
+const unidad =document.getElementById("unidad")
+const subsistema =document.getElementById("subsistama")
+const rangomin =document.getElementById("rangomin")
+const rangomax =document.getElementById("rangomax")
+const unidaddemed =document.getElementById("unidaddemed")
+const tipo =document.getElementById("tipo")
+const central =document.getElementById("central")
+const fecha =document.getElementById("fecha")
+const plandemant =document.getElementById("plandemant")
 
 
 
-/*let tagdelinst
+  /*let tagdelinst
  tagdelinst = prompt("Colocar el Tag del instrumento");
   alert("Planilla Lista para Calibrar" + " " + tagdelinst);
-*/
+
 
 function instrumento(Marca,Modelo,kks,numerodeserie,unidad,equipo,central,orden,rangomin,rangomax){
     this.Marca = Marca;
@@ -60,7 +75,7 @@ function instrumento(Marca,Modelo,kks,numerodeserie,unidad,equipo,central,orden,
     
 }
 
-
+/*
   let valorencont1
   let valorencont2
   let valorencont3
@@ -118,7 +133,16 @@ if(criteriodeaceptacion < 1){
   alert("Fuera de criterio");
 } ;
 
-
-
-
+function ShowSelected()
+{
+/* Para obtener el valor */
+/*var cod = document.getElementById("producto").value;
+alert(cod);
+ 
+/* Para obtener el texto */
+/*var combo = document.getElementById("producto");
+var selected = combo.options[combo.selectedIndex].text;
+alert(selected);
+}
+*/
 
