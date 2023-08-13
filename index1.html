@@ -147,7 +147,6 @@
         </div>
       </nav>
 
-
       <main >
         <div id="clock">
         <h2>The time is now</h2>
@@ -174,146 +173,127 @@
     </div>
 
 
-    <h2 class="datosinst">Nuevos Instrumento</h2>
+      <h2 class="datosinst">Nuevos Instrumento</h2>
     
       
-      
+      <form >
         <div>
-      <br>
-      <label id="marca" for="">Marca</label>
-      <select id="marca" name="marca" onchange="ShowSelected();">
+          <br>
+
+         <label  for="">TAG</label>  
+     
+             <input id="tag" type="text">
+   
+          <label  for="">Modelo</label> 
+     
+             <input id="modelo" type="text">
+     
+          <label  for="">KKS</label> 
+      
+             <input id="kks" type="text">
+      
+           <label  for="">N° de Serie</label> 
+      
+             <input id="ndeserie" type="text">
+   
+          <label  for="">Rango min</label>
+     
+             <input id="rangomin" type="text">
+
+           <label  for="">Rango Max</label>
         
-        <option value="13"></option>
-        <option value="12">Rosemount</option>
-        <option value="13">Yokogawa</option>
-        <option value="13">ABB</option>
-        <option value="13">FoxBoro</option>
-        </select>
+            <input id="rangomax" type="text"> 
 
-      <label id="modelo" for="">Modelo</label> 
-      <input type="text">
-
-
-      <label id="kks" for="">KKS</label> 
-      <input type="text">
-
-
-      <label id="ndeserie" for="">N° de Serie</label> 
-      <input type="text">
-
+          <label  for="">Tipo</label> 
       
-      <label id="unidad" for="">Unidad</label>
-      <select id="unidad" name="unidad" onchange="ShowSelected();">
-        <option value="13"></option>
-        
-        </select>
-
-          
-      <label id="subsistema" for="">Sistema</label> 
-      <select id="sistema" name="sistema" onchange="ShowSelected();">
-      <option value="13"></option>
-        <option value="12">TG#1</option>
-        <option value="13">TG#2</option>
-        <option value="13">TG#3</option>
-        <option value="13">TG#4</option> 
-    </select>
-
-
-      <label id="rangomin" for="">Rango min</label>
-      <input type="text">
-
-      <label id="rangomax" for="">Rango Max</label> 
-      <input type="text"> 
-
-
-      
-      <label id="unidaddemed" for="">Unidad de Med.</label> 
-      <select id="unidaddemed" name="unidaddemed" onchange="ShowSelected();">
-      <option value="13"></option>
-      <option value="12">PSIG</option>
-      <option value="13">PSIA</option>
-      <option value="13">PSID</option>
-      <option value="13">mBar</option>
-      <option value="13">Bar</option>
-      <option value="13">ºC</option>
-      <option value="13">ºF</option>
-      <option value="13">%lel</option>
-      <option value="13"></option>
-      <option value="13">mBar</option>  
-      </select>
-
-      <label id="tipo" for="">Tipo</label> 
-      <input type="text"> 
-
-
-      
-      <label id="central" for="">Central</label> 
-      <select id="central" name="central" onchange="ShowSelected();">
-      <option value="13"></option>
-        <option value="12">CT ROJO</option>
-        <option value="13">CT BARKER</option>
-        <option value="13">CR VILLA MARIA</option>
-      </select>
-
-
-      <label id="fecha" for="">Fecha</label> 
-      <input type="text"> 
-
-
-      
-      <label id="plandemant" for="">Plan de Mantenimiento</label> 
-      <select id="plandemant" name="plandemant" onchange="ShowSelected();">
-      <option value="13"></option>
-      <option value="12">PM01</option>
-      <option value="13">PM02</option>
-      <option value="13">PM03</option>
-      </select>
-      
-      <button id="nuevoregistro">Agregar Inst.</button>
-
-      <hr>
-
+             <input id="tipo" type="text">
+ 
+          <label  for="">Fecha</label> 
   
-    </div>
+            <input id="fecha" type="text"> 
+
+      
+      <hr>
+     </form>
+     <button type="button" onclick="btnAgregar()">Agregar Inst.</button>
+
+      </div>
 
 
+    <h3>DATOS DE CALIBRACIÓN</h3>
+      <form >
+        <h4>Valores Encontrados</h4>
+        <div>
+          <label for="">4mA</label>
+          <input id="valor1" type="text">
+          <br>
+          <label for="">8mA</label>
+          <input id="valor2" type="text">
+          <br>
+          <label for="">12mA</label> 
+          <input id="valor3" type="text">
+          <br>
+          <label for="">16mA</label> 
+          <input id="valor4" type="text">
+          <br>
+          <label for="">20mA</label> 
+          <input id="valor5" type="text">
+          <br>
+          <label for="">16mA</label>
+          <input id="valor6" type="text"> 
+          <br>
+    
+          <label for="">12mA</label> 
+          <input id="valor7" type="text"> 
+          <br>
+          <label for="">8mA</label>
+          <input id="valor8" type="text">
+          <br>
+          <label for="">4mA</label> 
+          <input id="valor9" type="text"> 
+          <br>
+         
+        </div>
 
-
-
-    <h3>Datos de Calibracion</h3>
-    <div>
-      <label for="">4mA</label>
-      <input type="text">
-      <br>
-      <label for="">8mA</label>
-      <input type="text">
-      <br>
-      <label for="">12mA</label> 
-      <input type="text">
-      <br>
-      <label for="">16mA</label> 
-      <input type="text">
-      <br>
-      <label for="">20mA</label> 
-      <input type="text">
-      <br>
-      <label for="">16mA</label>
-      <input type="text"> 
-      <br>
-
-      <label for="">12mA</label> 
-      <input type="text"> 
-      <br>
-      <label for="">8mA</label>
-      <input type="text">
-      <br>
-      <label for="">4mA</label> 
-      <input type="text"> 
-      <br>
-      <button>Cargar Datos</button>
-    </div>
+        <h4>Valores Ajustados</h4>
+        <div>
+          <label for="">4mA</label>
+          <input id="valor10" type="text">
+          <br>
+          <label for="">8mA</label>
+          <input id="valor11" type="text">
+          <br>
+          <label for="">12mA</label> 
+          <input id="valor12" type="text">
+          <br>
+          <label for="">16mA</label> 
+          <input id="valor13" type="text">
+          <br>
+          <label for="">20mA</label> 
+          <input id="valor14" type="text">
+          <br>
+          <label for="">16mA</label>
+          <input id="valor15" type="text"> 
+          <br>
+          <label for="">12mA</label> 
+          <input id="valor16" type="text"> 
+          <br>
+          <label for="">8mA</label>
+          <input id="valor17" type="text">
+          <br>
+          <label for="">4mA</label> 
+          <input id="valor18" type="text"> 
+          <br>
+          
+        </div>
+      </form>
+      <button type="button" onclick="calibracion()">Cargar Datos</button>
+     
     
 
+    
+    
+     
 
   </main>
 
@@ -345,7 +325,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="app.js"></script>
     
 </body>
 </html>
